@@ -6,24 +6,15 @@ html {
 body {
   font-family: "Segoe UI";
   color: #000;
-  background-color: white;
+
 }
 
-.main-content {
-  padding-top: 70px;
-}
-
-.container {
-	max-width: 1024px;
-	margin: 0 auto;
+p {
+  line-height: 1.25;
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 strong {
@@ -34,15 +25,52 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main-content {
+  /*padding-top: 4rem;*/
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+  background-color: white;
+  padding-left: 1.5rem;
+}
+
 header {
   border-bottom: 1px solid green;
   height: 4rem;
-}
+  }
 
-header .container {
+header .container, footer .container {
 	display: flex;
 	justify-content: space-between;
   align-items: center;
+}
+
+/* Logo section - top of page */
+.logo {
+  height: 2rem;
+	text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo img {
+	vertical-align: middle;
+}
+
+.logo span {
+  vertical-align: middle;
+  color: #808080;
+}
+
+.logo span strong {
+  color: #000;
 }
 
 /* Main Navigation */
@@ -57,31 +85,48 @@ nav span {
 }
 nav a:hover {
   color: #4682B4;
+  text-decoration: underline;
 }
 
 nav img {
   display: none;
 }
 
-/* Logo section - top of page */
-.logo {
-  height: 2rem;
-	text-transform: uppercase;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.logo img {
-	padding-left: 1.5rem;
-	vertical-align: middle;
-}
-
-.logo span {
-  vertical-align: middle;
-}
 
 /* Banner */
 
-.main-banner {
-  height: 25rem;
+#banner .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#banner img {
+   width: 60%;
+   height: auto;
+   margin-right: 1.5rem;
+}
+
+#banner .cta {
+  width: 30%;
+}
+
+#banner .cta div {
+  padding: 0.5rem;
+  margin-top: 2rem;
+  background-color: #000;
+  text-align: center;
+  font-size: 0.75rem;
+  color: white;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+}
+
+footer .container {
+  padding: 1rem 1.5rem 2rem;
 }

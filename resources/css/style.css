@@ -1,1 +1,87 @@
+html {
+  font-size: 16px;
+  background-color: #708090;
+}
 
+body {
+  font-family: "Segoe UI";
+  color: #000;
+  background-color: white;
+}
+
+.main-content {
+  padding-top: 70px;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+header {
+  border-bottom: 1px solid green;
+  height: 4rem;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
+
+/* Main Navigation */
+
+nav {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+nav span {
+  padding: 1rem 0.5rem;
+}
+nav a:hover {
+  color: #4682B4;
+}
+
+nav img {
+  display: none;
+}
+
+/* Logo section - top of page */
+.logo {
+  height: 2rem;
+	text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo img {
+	padding-left: 1.5rem;
+	vertical-align: middle;
+}
+
+.logo span {
+  vertical-align: middle;
+}
+
+/* Banner */
+
+.main-banner {
+  height: 25rem;
+}

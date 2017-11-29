@@ -1,11 +1,12 @@
 html {
   font-size: 16px;
-  background-color: #708090;
+  /*background-color: #CDCDCD;*/
+  background-color: #E9E9E9;
 }
 
 body {
   font-family: "Segoe UI";
-  color: #000;
+  color: #555;
 
 }
 
@@ -15,6 +16,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #03aae7;
 }
 
 strong {
@@ -26,23 +28,34 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .main-content {
-  /*padding-top: 4rem;*/
+
 }
 
 .container {
-	max-width: 1024px;
+	max-width: 1440px;
 	margin: 0 auto;
   background-color: white;
   padding-left: 1.5rem;
+  border-left: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
 }
 
 header {
-  border-bottom: 1px solid green;
   height: 4rem;
   }
 
@@ -101,16 +114,23 @@ nav img {
   align-items: center;
   padding-bottom: 2rem;
   padding-top: 2rem;
+  /*background-color: lightsalmon;*/
+  border-top: 1px solid #CDCDCD;
 }
 
 #banner img {
    width: 60%;
    height: auto;
    margin-right: 1.5rem;
+   display: block;
 }
 
 #banner .cta {
-  width: 30%;
+  padding-right: 1.5rem;
+}
+
+#banner .cta p {
+  font-size: 1.5rem;
 }
 
 #banner .cta div {
@@ -118,10 +138,155 @@ nav img {
   margin-top: 2rem;
   background-color: #000;
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: white;
 }
 
+/* About */
+
+#about {
+
+}
+#about .container {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #CDCDCD;
+}
+
+#about .main {
+  width: 60%;
+  margin-right:24px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#about .main img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+#about .main h2 {
+  margin-top: 2rem;
+}
+
+#about .main div {
+  font-size: 0.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#about .info {
+   max-width: 40%;
+   border-left: 1px solid #CDCDCD;
+   padding-top: 1rem;
+}
+
+#about .info p {
+  padding-bottom: 0.5rem;
+}
+
+#about .info .orientation, #about .info .campus, #about .info .guest {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+}
+
+#about .info .orientation:hover, #about .info .campus:hover, #about .info .guest:hover {
+  background-color: yellow;
+}
+
+#about .info img {
+  width: 35%;
+  height: auto;
+  display: inline-block;
+}
+
+#about img.mobile {
+  display: none;
+}
+
+#about .info .details {
+  padding-left: 1.5rem;
+}
+
+/* Get Started */
+#getstarted {
+
+}
+#getstarted .container {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  /*background-color: salmon;*/
+  border-top: 1px solid #CDCDCD;
+}
+
+/* Thesis Exhibits */
+
+#exhibits .container {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #CDCDCD;
+}
+
+#exhibits .main {
+  width: 60%;
+  margin-right:24px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#exhibits .main video {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+#exhibits .main h3 {
+  margin-top: 2rem;
+}
+
+#exhibits .info {
+   max-width: 40%;
+   border-left: 1px solid #CDCDCD;
+   padding-top: 1rem;
+}
+
+#exhibits .info p {
+  padding-bottom: 0.5rem;
+}
+
+#exhibits .info .fisma, #exhibits .info .now {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+}
+
+#exhibits .info .fisma:hover, #exhibits .info .now:hover {
+  background-color: yellow;
+}
+
+#exhibits .info img {
+  width: 35%;
+  height: auto;
+  display: inline-block;
+}
+
+#exhibits .info .details {
+  padding-left: 1.5rem;
+}
+
+/* Footer */
 footer {
   margin-top: 2rem;
   font-size: 0.75rem;
@@ -129,4 +294,6 @@ footer {
 
 footer .container {
   padding: 1rem 1.5rem 2rem;
+  /*background-color: coral;*/
+  border-top: 1px solid #CDCDCD;
 }

@@ -115,7 +115,7 @@ nav img {
   padding-bottom: 2rem;
   padding-top: 2rem;
   /*background-color: lightsalmon;*/
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #E9E9E9;
 }
 
 #banner img {
@@ -150,7 +150,7 @@ nav img {
 #about .container {
   display: flex;
   justify-content: flex-start;
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #E9E9E9;
 }
 
 #about .main {
@@ -178,7 +178,7 @@ nav img {
 
 #about .info {
    max-width: 40%;
-   border-left: 1px solid #CDCDCD;
+   border-left: 1px solid #E9E9E9;
    padding-top: 1rem;
 }
 
@@ -224,15 +224,24 @@ nav img {
   padding-bottom: 2rem;
   padding-top: 2rem;
   /*background-color: salmon;*/
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #E9E9E9;
 }
 
 /* Thesis Exhibits */
 
+#exhibits h2 {
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 0;
+}
+
 #exhibits .container {
+  border-top: 1px solid #E9E9E9;
+}
+
+#exhibits .flex-container {
   display: flex;
   justify-content: flex-start;
-  border-top: 1px solid #CDCDCD;
 }
 
 #exhibits .main {
@@ -249,12 +258,12 @@ nav img {
 }
 
 #exhibits .main h3 {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 #exhibits .info {
    max-width: 40%;
-   border-left: 1px solid #CDCDCD;
    padding-top: 1rem;
 }
 
@@ -288,12 +297,13 @@ nav img {
 
 /* Footer */
 footer {
-  margin-top: 2rem;
   font-size: 0.75rem;
+
 }
 
 footer .container {
-  padding: 1rem 1.5rem 2rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
   /*background-color: coral;*/
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #E9E9E9;
 }

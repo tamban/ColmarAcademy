@@ -142,7 +142,6 @@ header nav img {
 /* Banner */
 
 #banner {
-  padding-top: 4rem;
   border: 1px solid #CDCDCD;
 }
 
@@ -447,23 +446,7 @@ footer .copyright {
   margin-left: 1.5rem;
 }
 
-@media only screen and (max-width: 702px) {
-  header nav img {display: inline-block;width:30%;height:auto;}
-  header nav span {display: none;}
-  header div.logo {display: none;}
-  header .flex-container {background-color: transparent;justify-content: space-between;align-items:stretch;}
-  header nav {background-color:transparent; float: none;}
-  header nav a {padding:0;height:4rem;width:23%;text-align:center;border:1px solid green;}
-  header {min-width: 340px;}
-  #banner {padding-top: 0;border-top: 0 solid transparent;}
-  #banner .flex-container {display: block; padding-top: 0; padding-bottom: 0;}
-  #banner .main {max-width: none; margin-right: 0; margin-left: 0;}
-  #banner .cta {max-width: none; margin: 2rem 1rem;}
-  #banner .cta div {margin-top: 1.5rem;}
-  h1 {margin-bottom: 2rem;}
-}
-
-
+/*Responsive media queries*/
 
 @media screen and (max-width: 1074px) {
   #getstarted .card {
@@ -471,7 +454,24 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media only screen and (max-width: 702px) {
+  header nav img {display: inline-block;width:30%;height:4rem;}
+  header nav span {display: none;}
+  header div.logo {display: none;}
+  header .flex-container {background-color: transparent;justify-content: space-between;align-items:stretch;}
+  header nav {background-color:transparent; float: none;}
+  header nav a {padding:0;height:4rem;width:24%;text-align:center;}
+  header {min-width: 340px;}
+  #banner {padding-top: 0;border-top: 0 solid transparent;}
+  #banner .flex-container {display: block; padding-top: 0; padding-bottom: 0;}
+  #banner .main {max-width: none; margin-right: 0; margin-left: 0;}
+  #banner .cta {max-width: none; margin: 2rem 1rem;}
+  #banner .cta div {margin-top: 1.5rem;}
+  h1 {margin-bottom: 2rem;}
+  #about .main, #about .info, #exhibits .main, #exhibits .info {max-width: 50%;}
+}
+
+@media only screen and (max-width: 595px) {
   #about {border: 0 solid transparent; margin-top: 0;}
   #about .flex-container {display: block;}
   #about .main {display: none;}
@@ -481,6 +481,21 @@ footer .copyright {
   #about img.mobile {display: block;width:100%;height:auto;}
   #about .info .details {padding-left: 1rem;padding-top: 1.5rem;}
   #about .info .guest .details p:last-child {padding-bottom: 1rem;}
+  #getstarted .card {width: 100%;}
+  #exhibits {margin-top: 0; border: 0 solid transparent;}
+  #exhibits .info {display: none;}
+  #exhibits .main {padding: 0; margin: 0; padding-top: 1rem;max-width:none;}
+  #exhibits .main h3 {display: none;}
+  #exhibits .main p {display: none;}
+}
+
+@media screen and (max-width: 447px) {
+  header nav a {width:23%;}
+}
+
+@media screen and (max-width: 414px) {
+  header nav a {width:23%;}
+
 
   #getstarted {margin-top: 0;}
   #getstarted .flex-container {display: block;padding-top: 1rem;padding-bottom:1.5rem;margin:0;}
@@ -500,11 +515,7 @@ footer .copyright {
   }
   #getstarted .card h4, #getstarted .card p, #getstarted .card img {display:none;}
 
-  #exhibits {margin-top: 0; border: 0 solid transparent;}
-  #exhibits .info {display: none;}
-  #exhibits .main {padding: 0; margin: 0; padding-top: 1rem;max-width:none;}
-  #exhibits .main h3 {display: none;}
-  #exhibits .main p {display: none;}
+
 
   footer {margin-top: 1.5rem;}
   footer .flex-container {padding-bottom: 1rem;}

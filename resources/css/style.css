@@ -483,22 +483,30 @@ footer .copyright {
   #about .info .guest .details p:last-child {padding-bottom: 1rem;}
 
   #getstarted {margin-top: 0;}
-  #getstarted .flex-container {display: block;padding-top: 1rem;margin:0;}
+  #getstarted .flex-container {display: block;padding-top: 1rem;padding-bottom:1.5rem;margin:0;}
   #getstarted .card {
     margin: 0 1rem 1rem 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding: 1rem 1rem 1.5rem 1rem;
     display: block;
-    width: 100%;
+    width: auto;
     min-width: inherit;
     min-height: inherit;
     box-shadow: none;
     background-color: #03aae7;
   }
+  #getstarted .card .details {padding:0;}
   #getstarted .card .details h3 {
     color: #FFF; margin-bottom: 0;
   }
-  #getstarted .card h4, #getstarted .card p, #getstarted .card img {
-    display:none;
-  }
+  #getstarted .card h4, #getstarted .card p, #getstarted .card img {display:none;}
+
+  #exhibits {margin-top: 0; border: 0 solid transparent;}
+  #exhibits .info {display: none;}
+  #exhibits .main {padding: 0; margin: 0; padding-top: 1rem;max-width:none;}
+  #exhibits .main h3 {display: none;}
+  #exhibits .main p {display: none;}
+
+  footer {margin-top: 1.5rem;}
+  footer .flex-container {padding-bottom: 1rem;}
+  footer nav {display: none;}
 }

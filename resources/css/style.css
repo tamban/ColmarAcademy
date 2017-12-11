@@ -448,13 +448,13 @@ footer .copyright {
 
 /*Responsive media queries*/
 
-@media screen and (max-width: 1074px) {
+@media all and (max-width: 1074px) {
   #getstarted .card {
     width: 29%;
   }
 }
 
-@media only screen and (max-width: 702px) {
+@media all and (max-width: 702px) {
   header nav img {display: inline-block;width:30%;height:4rem;}
   header nav span {display: none;}
   header div.logo {display: none;}
@@ -471,7 +471,7 @@ footer .copyright {
   #about .main, #about .info, #exhibits .main, #exhibits .info {max-width: 50%;}
 }
 
-@media only screen and (max-width: 595px) {
+@media all and (max-width: 550px) {
   #about {border: 0 solid transparent; margin-top: 0;}
   #about .flex-container {display: block;}
   #about .main {display: none;}
@@ -489,14 +489,12 @@ footer .copyright {
   #exhibits .main p {display: none;}
 }
 
-@media screen and (max-width: 447px) {
+@media all and (max-width: 447px) {
   header nav a {width:23%;}
 }
 
-@media screen and (max-width: 414px) {
+@media all and (max-width: 414px) {
   header nav a {width:23%;}
-
-
   #getstarted {margin-top: 0;}
   #getstarted .flex-container {display: block;padding-top: 1rem;padding-bottom:1.5rem;margin:0;}
   #getstarted .card {
@@ -514,9 +512,6 @@ footer .copyright {
     color: #FFF; margin-bottom: 0;
   }
   #getstarted .card h4, #getstarted .card p, #getstarted .card img {display:none;}
-
-
-
   footer {margin-top: 1.5rem;}
   footer .flex-container {padding-bottom: 1rem;}
   footer nav {display: none;}

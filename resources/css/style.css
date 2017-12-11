@@ -71,6 +71,7 @@ h4 {
 
 header {
   height: 4rem;
+  background-color: #03aae7;
   border-bottom: 5px solid #CDCDCD;
  }
 
@@ -78,7 +79,7 @@ header {
  	justify-content: space-between;
   width: 100%;
   max-width: 1170px;
-  background-color: #03aae7;
+
  }
 
 /* Logo section - top of page */
@@ -88,6 +89,7 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-left: 1.5rem;
+  float:left;
 }
 
 .logo img {
@@ -107,6 +109,7 @@ header {
 
 header nav {
   background-color: #333;
+  float: right;
 }
 
 header nav a {
@@ -442,4 +445,60 @@ footer .flex-container {
 
 footer .copyright {
   margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 702px) {
+  header nav img {display: inline-block;width:30%;height:auto;}
+  header nav span {display: none;}
+  header div.logo {display: none;}
+  header .flex-container {background-color: transparent;justify-content: space-between;align-items:stretch;}
+  header nav {background-color:transparent; float: none;}
+  header nav a {padding:0;height:4rem;width:23%;text-align:center;border:1px solid green;}
+  header {min-width: 340px;}
+  #banner {padding-top: 0;border-top: 0 solid transparent;}
+  #banner .flex-container {display: block; padding-top: 0; padding-bottom: 0;}
+  #banner .main {max-width: none; margin-right: 0; margin-left: 0;}
+  #banner .cta {max-width: none; margin: 2rem 1rem;}
+  #banner .cta div {margin-top: 1.5rem;}
+  h1 {margin-bottom: 2rem;}
+}
+
+
+
+@media screen and (max-width: 1074px) {
+  #getstarted .card {
+    width: 29%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #about {border: 0 solid transparent; margin-top: 0;}
+  #about .flex-container {display: block;}
+  #about .main {display: none;}
+  #about .info {max-width: none;border-left: 0 solid transparent;padding-top: 0; padding-bottom: 0;}
+  #about .info .orientation, #about .info .campus, #about .info .guest {display: block;padding-right:1rem;}
+  #about .info img {display:none;}
+  #about img.mobile {display: block;width:100%;height:auto;}
+  #about .info .details {padding-left: 1rem;padding-top: 1.5rem;}
+  #about .info .guest .details p:last-child {padding-bottom: 1rem;}
+
+  #getstarted {margin-top: 0;}
+  #getstarted .flex-container {display: block;padding-top: 1rem;margin:0;}
+  #getstarted .card {
+    margin: 0 1rem 1rem 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    width: 100%;
+    min-width: inherit;
+    min-height: inherit;
+    box-shadow: none;
+    background-color: #03aae7;
+  }
+  #getstarted .card .details h3 {
+    color: #FFF; margin-bottom: 0;
+  }
+  #getstarted .card h4, #getstarted .card p, #getstarted .card img {
+    display:none;
+  }
 }
